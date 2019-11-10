@@ -1,0 +1,11 @@
+<h1>つぶやき一覧</h1>
+<p> <%= notice %></p>
+  </p>
+<%= link_to "新しくつぶやく", new_div_path %>
+<table>
+<% @divs.each do |div| %>
+  <tr>
+    <td><%= link_to div.content, div_path(div.id) %></td>
+  </tr>
+<% end %>
+</table>

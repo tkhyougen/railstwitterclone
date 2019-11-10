@@ -1,0 +1,18 @@
+<%= link_to "一覧に戻る", divs_path %>
+<div class="main posts-show">
+  <div class="container">
+    <div class="posts-show-item">
+      <p>つぶやき内容</p>
+      <p>
+        <%= @div.content %>
+      </p>
+      <div class="post-time">
+      </div>
+      <div class="post-menus">
+        <%= link_to "編集", edit_div_path(@div.id), data:{ confirm: "編集してよいですか？"} %>
+        <%= link_to "削除", div_path, method: :delete, data:{ confirm: "本当に削除しますか？"} %>
+
+      </div>
+    </div>
+  </div>
+</div>
