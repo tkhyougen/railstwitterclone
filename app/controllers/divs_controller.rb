@@ -1,7 +1,7 @@
 class DivsController < ApplicationController
     before_action :set_div, only:[:edit, :update, :show, :destroy]
     def index
-      @divs = Div.all
+      @divs = Div.all.order(created_at: :desc)
     end
 
     def new

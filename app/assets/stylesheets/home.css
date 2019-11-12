@@ -1,0 +1,66 @@
+body {
+  color: #2d3133;
+
+  margin: 0;
+  min-height: 1vh;
+}
+
+
+
+header {
+  height: 64px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color:#26d0c9;
+}
+
+.header-logo h3 {
+  float: left;
+  color: black;
+  font-size: 22px;
+  padding-left:20px;
+}
+
+.header-menus {
+  float: right;
+  padding-right: 30px;
+}
+
+ ul{
+  list-style-type:none;
+}
+.header-menus li {
+  float: left;
+  font-size: 22px;
+  color: white;
+  padding-left:15px;
+}
+
+.container {
+  padding:80px 20px;
+  margin:auto;
+  text-align:center;
+  height:600px;
+}
+
+.container-contents {
+
+  margin:auto;
+  text-align:center;
+}
+.tweets{
+  padding: 20px 30px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+}
+.wrapper{
+  padding:20px;
+}
+.wrapper h3{
+  border: solid 3px #000000;
+}
+.div_content{
+  padding-bottom:10px;
+}

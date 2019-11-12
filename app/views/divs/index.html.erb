@@ -1,10 +1,10 @@
-<h1>つぶやき一覧</h1>
-<p> <%= notice %></p>
-  </p>
-<%= link_to "新しくつぶやく", new_div_path %>
-<table>
+<div class = wrapper>
+  <h3>過去のつぶやき</h3>
+  <p> <%= notice %></p>
+</div>
+<table class="container-contents">
 <% @divs.each do |div| %>
-  <tr>
+  <tr class= "tweets">
     <td><%= link_to div.content, div_path(div.id) %></td>
   </tr>
 <% end %>

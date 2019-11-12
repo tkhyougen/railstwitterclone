@@ -1,11 +1,16 @@
+<div class="contaier">
+
 <%= link_to "一覧に戻る", divs_path %>
-<div class="main posts-show">
-  <div class="container">
+ <div class="main posts-show">
+
     <div class="posts-show-item">
       <p>つぶやき内容</p>
-      <p>
+      <h3>
         <%= @div.content %>
-      </p>
+      </h3>
+      <h3>
+        <%= @div.created_at %>
+      </h3>
       <div class="post-time">
       </div>
       <div class="post-menus">
@@ -14,5 +19,6 @@
 
       </div>
     </div>
-  </div>
+
+ </div>
 </div>
