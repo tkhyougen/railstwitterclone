@@ -1,5 +1,6 @@
 class DivsController < ApplicationController
     before_action :set_div, only:[:edit, :update, :show, :destroy]
+
     def index
       @divs = Div.all.order(created_at: :desc)
     end
@@ -33,7 +34,6 @@ class DivsController < ApplicationController
       end
     end
 
-
     def show
     end
 
@@ -47,7 +47,9 @@ class DivsController < ApplicationController
       render:new if @div.invalid?
     end
 
+
     private
+
     def div_params
       params.require(:div).permit(:content)
     end
@@ -55,6 +57,5 @@ class DivsController < ApplicationController
     def set_div
       @div = Div.find(params[:id])
     end
-
 
 end

@@ -1,22 +1,18 @@
-
 <%= form_with(model: @div, local: true , url: choose_new_or_edit) do |form| %>
 
-<% if @div.errors.any? %>
-  <div id="error_explanation">
-    <h2>エラーがあります。</h2>
-    <ul>
+  <% if @div.errors.any? %>
+    <div id="error_explanation">
+      <h2>エラーがあります。</h2>
+      <ul>
+        <% @div.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
-    <% @div.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-    </ul>
-  </div>
-<% end %>
-
-  <div class="div_content">
-
-    <%= form.text_area :content,size: "50x5" %>
-  </div>
-
+    <div class="div_content">
+      <%= form.text_area :content,size: "50x5" %>
+    </div>
   <%= form.submit "つぶやく" %>
 <% end %>

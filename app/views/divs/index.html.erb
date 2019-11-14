@@ -2,10 +2,11 @@
   <h3>過去のつぶやき</h3>
   <p> <%= notice %></p>
 </div>
+
 <table class="container-contents">
-<% @divs.each do |div| %>
-  <tr class= "tweets">
-    <td><%= link_to div.content, div_path(div.id) %></td>
-  </tr>
-<% end %>
+  <% @divs.each do |div| %>
+    <tr class= "tweets">
+      <td><%= link_to div.content, div_path(div.id) %></td>
+    </tr>
+  <% end %>
 </table>
