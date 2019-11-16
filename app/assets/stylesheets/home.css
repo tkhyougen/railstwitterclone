@@ -38,7 +38,7 @@ ul{
   padding:80px 20px;
   margin:auto;
   text-align:center;
-  height:600px;
+  height:500px;
 }
 
 .container-contents {
@@ -65,4 +65,24 @@ ul{
 
 .div_content{
   padding-bottom:10px;
+}
+
+footer{
+  height:30px;  
+  background-color:#26d0c9;
+}
+
+.footer-logo p {
+  float: left;
+  font-size: 10px;
+  padding-left:20px;
+}
+
+.footer-myname {
+  float: right;
+  padding-right: 30px;
+}
+
+.footer-myname p {
+  font-size: 10px;
 }
